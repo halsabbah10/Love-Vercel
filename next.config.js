@@ -7,11 +7,6 @@ const nextConfig = {
     domains: ['images.pexels.com'], // Add Pexels domain for images
     unoptimized: false, // Enable image optimization
   },
-  swcMinify: true, // Enable SWC minification
-  experimental: {
-    optimizeCss: true,
-    optimizePackageImports: ['lucide-react'],
-  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(glsl|vs|fs|vert|frag)$/,
